@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="ta.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AGREGAR TAREA</h1>
+        <div id="task-list">
+            <!-- Aquí se mostrarán las tareas -->
+        </div>
+        <div>
+            <input type="text" id="task-input" placeholder="Nueva tarea">
+            <input type="time" id="task-time">
+            <button onclick="addTask()">Agregar tarea</button>
+            <button onclick="filterTasks(true)">Entregadas</button>
+            <button onclick="filterTasks(false)">No entregadas</button>
+            <button onclick="displayTasks()">Mostrar todas</button>
+        </div>
+    </div>
+    <script src="ta.js"></script>
+</body>
+</html>
